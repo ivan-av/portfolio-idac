@@ -1,0 +1,164 @@
+html {
+    font-size: 16px;
+    font-family:'Poppins', sans-seriff;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    background: #004c8c;
+    position:sticky;
+    top:0;
+    height: 55px;
+}
+
+.navbar__container{
+    position: relative;
+    display:flex;
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar__nav-menu{
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    background-color: #02437c;
+    padding: 20px 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar__nav-menu a:hover{
+    color: #ffe602;
+}
+
+.navbar i {
+    font-size: 30px;
+    color: white;
+}
+
+/* .navbar i:hover {
+    color: #ffe602;
+    transition: 0.3s;
+} */
+
+.navbar-checkbox{
+    display: none;
+}
+
+.navbar-checkbox:checked ~ .navbar__nav-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-btnCheckbox{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hero {
+    min-height: 60vh;
+    background-image:url("../img/vectors/bg-mobile.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: top;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero__main-name{
+    padding-top: 30px;
+    margin:0 ;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffe602;
+}
+
+.main-name__span{
+    font-weight: 600;
+    color: white; 
+}
+
+.hero__description{
+    margin:0 ;
+    color: rgb(221, 221, 221); 
+}
+
+.hero__image{
+    width:150px;
+    height: 200px;
+    padding: 50px 15px 0px;
+}
+
+.hero__image img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.about{
+    padding: 40px 0
+}
+
+.about__container{
+    padding: 0 20px;
+}
+
+.about__description{
+    border-left: 3px solid #004c8c;
+    padding-left: 20px;
+}
+
+.about__btn-download{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.about__btn-cv{
+    background-color: #004c8c;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.about__btn-cv:hover{
+    background-color: #02437c;
+}
