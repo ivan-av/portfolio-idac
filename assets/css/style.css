@@ -232,28 +232,84 @@ body{
 
 .about__container{
     padding: 0 15px;
+    /* border: green solid 3px; */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about__titular {
+    /* border: brown solid 1px; */
+}
+
+.about__title {
+    padding: 20px 0;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .about__description{
-    
+    font-size: 15px;
+    color: rgb(45, 45, 45);   
 }
 
-.about__btn-download{
-    margin: 20px 0;
-    text-align: center;
+.about__experience {
+    /* border: solid 1px blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.about__btn-cv{
-    background-color: #004c8c;
-    color: white;
+.about__subtitle-experience {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.about__experience-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__job {
+    /* border: solid 1px red; */
+    border-bottom: solid 2px #0000004b;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.about__job-last{
     border: none;
-    padding: 5px 15px;
-    border-radius: 15px;
-    cursor: pointer;
+    padding-bottom: none;
+    margin-bottom: none;
+    margin: initial;
 }
 
-.about__btn-cv:hover{
-    background-color: #02437c;
+.job_description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.job__date {
+    color: #413f40;
+    font-size: 15px;
+}
+
+.job__title {
+    font-weight: 700;
+}
+
+.job__company {
+    color: #413f40;
+}
+
+.about__skills {
+    /* border: solid 2px purple; */
 }
 
 .portfolio{
