@@ -13,32 +13,37 @@
 </head>
 
 <body>
-
+<!-- ---------------------------------------------- -->
 <!-- Section - Header -->
-    <header class="navbar">
-        <container class="navbar__container">
-            
-            <input type="checkbox" class="navbar-checkbox" id="id-Navbar__btnMenu">
-            <label class="navbar-btnCheckbox" for="id-Navbar__btnMenu">
+    
+    <!-- Navbar -->
+<header class="navbar">
+    <container class="navbar__container">
+        
+        <input type="checkbox" class="navbar-checkbox" id="id-Navbar__btnMenu">
+        <label class="navbar-btnCheckbox" for="id-Navbar__btnMenu">
             <i class='bx bx-menu'></i>
-            </label>
-
+        </label>
+        
             <nav class="navbar__nav-menu">
                 <a href="#" class="nav-menu__home">Home</a>
                 <a href="#about" class="nav-menu__about">Acerca de mí</a>
-                <a href="#" class="nav-menu__skills">Mis habilidades</a>
-                <a href="#" class="nav-menu__experience">Experiencia</a>
+                <a href="#" class="nav-menu__exp-skills">Experiencia y habilidades</a>
                 <a href="#" class="nav-menu__portfolio">Mi portafolio</a>
                 <a href="#" class="nav-menu__contact">Contacto</a>
             </nav>
         </container>
     </header>
-
+    
+    
+<!-- ---------------------------------------------- -->
     <!-- Section - Main -->
     <main class="wrapper">
-
+        
+        <!-- Hero -->
         <section class="hero">
             <div class="hero__container">
+                <!-- Hero - Title -->
                 <div class="hero__title">
                     <h1 class="hero__main-name">
                         Soy
@@ -50,6 +55,7 @@
                         Desarrollador web / Biólogo
                     </p>
                 </div>
+                <!-- Hero -Content: Image and description -->
                 <div class="hero__content">
                     <div class="hero__image">
                         <img src="./assets/img/photos/hero.jpeg" alt="dev">
@@ -61,34 +67,83 @@
                         <div class="hero__experience">
                             + 1 mes de experiencia
                         </div>
+
+                        <!-- Hero social media: buttons and links -->
                         <div class="hero__social-media">
-                            a
+                            <!-- Hero - LinkedIn -->
+                            <button class="hero__btn-social-media hero__linkedin">
+                                <a class="link__social link__linkedin" href="https://www.linkedin.com/in/iv%C3%A1n-daniel-a-3277a9222" target="_blank">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                            </button>
+                            <!-- Hero - GitHub -->
+                            <button class="hero__btn-social-media hero__github">
+                                <a class="link__social link__github" href="https://github.com/ivan-av" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                            </button>                            
                         </div>
+                    </div>
+                </div>
+
+                <!-- Hero - Contact -->
+                <div class="hero__cv">
+                    <button class="hero__cv-btn">
+                        <i class='bx bx-file hero__cv-file-icon'></i> <span>Download CV</span> 
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <h2 class="about__title">Experiencia y habilidades</h2>
+                <div class="about__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>   
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio">
+            <div class="portfolio__container">
+                <div class="portfolio__title">Portafolio</div>
+                <div class="portfolio__projects">
+                    <div class="portfolio__project-ecommerce">
+                        <div class="project--ecommerce__title">Proyecto Carrito</div>
+                        <div class="project--ecommerce__thumbnail">
+                            <img src="" alt="">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="about__container">
-                <h2 class="about__title">Experiencia y habilidades</h2>
-                <div class="about__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam facilis dignissimos totam nemo corporis ducimus pariatur optio. Vitae tenetur nobis cumque neque rem perferendis at perspiciatis doloremque pariatur quae.
-                </div>
-                
-                <div class="about__btn-download">
-                    <button class="about__btn-cv"><i class='bx bx-down-arrow-alt'></i> Download CV</button>
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__title">Contacto</div>
+                <div class="contact__content">
+                    <div class="contact__number">
+                        Número celular
+                    </div>
+                    <div class="contact__email">
+                        Email
+                    </div>
                 </div>
             </div>
         </section>
-
+        
     </main>
-
+    
+    
+<!-- ---------------------------------------------- -->
     <!-- Section - Footer -->
-    <footer>
-        <container>
-
-        </container>
+    <footer class="footer">
+        <div class="footer__container">
+            Derechos reservados
+        </div>
     </footer>
 </body>
 </html>
