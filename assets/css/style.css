@@ -375,6 +375,22 @@ body{
     font-size: 55px;
 }
 
+.icon-database {
+    color: rgb(87, 1, 87);
+}
+
+.icon-javascript {
+    color: rgb(146, 51, 86);
+}
+
+.icon-html {
+    color: red;
+}
+
+.icon-css {
+    color: rgb(69, 69, 255);
+}
+
 .skills__grid-span {
     font-weight:500;
 }
