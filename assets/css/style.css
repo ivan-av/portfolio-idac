@@ -423,13 +423,13 @@ body{
 
     padding: var(--padding-sides);
 
-
-    border: red var(--tester-border);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border: red var(--tester-border);
+
 }
 
 .portfolio__container{
@@ -480,9 +480,14 @@ body{
     height: 100%;
     object-fit:contain;
     border-radius: 5px;
-    border: white;
+    border: none;
 }
 
+.project-thumbnail-img:hover {
+    border: solid 3px #7a6acaa0;
+    opacity: 80%;
+    transition: .2s;
+}
 
 .contact{
     height: auto;
@@ -493,20 +498,45 @@ body{
 
     padding: var(--padding-sides);
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     border: red var(--tester-border);
 }
 
 .contact__container{
     min-width: var(--min-width);
+    max-width: var(--max-width);
 
     border: blue var(--tester-border);
 }
 
+.contact__title {
+    padding-bottom: 20px;
+
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #413f40;
+}
 
 .contact__content{
     display: flex;
     justify-content: space-around;
+}
+
+.contact__number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -516,6 +546,7 @@ body{
     padding: 10px;
     text-align: center;
     color: #7a6aca;
+    background-color: #fff6d6;
 
     border: red var(--tester-border);
 }
