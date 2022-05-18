@@ -27,10 +27,9 @@
         
             <nav class="navbar__nav-menu">
                 <a href="#" class="nav-menu__home">Home</a>
-                <a href="#about" class="nav-menu__about">Acerca de mí</a>
-                <a href="#" class="nav-menu__exp-skills">Experiencia y habilidades</a>
-                <a href="#" class="nav-menu__portfolio">Mi portafolio</a>
-                <a href="#" class="nav-menu__contact">Contacto</a>
+                <a href="#about" class="nav-menu__exp-skills">Experiencia y habilidades</a>
+                <a href="#portfolio" class="nav-menu__portfolio">Mi portafolio</a>
+                <a href="#contact" class="nav-menu__contact">Contacto</a>
             </nav>
         </container>
     </header>
@@ -86,17 +85,20 @@
                     </div>
                 </div>
 
-                <!-- Hero - Contact -->
+                <!-- Hero - Curriculum Vitae -->
                 <div class="hero__cv">
-                    <button class="hero__cv-btn">
-                        <i class='bx bx-file hero__cv-file-icon'></i> <span>Download CV</span> 
-                    </button>
+                    <a href="https://drive.google.com/file/d/17VlXKzkfwVCxHn4AEtIiVlYXCrji3rRv/view?usp=sharing" class="hero__cv-link" target="_blank">
+                        <button class="hero__cv-btn">
+                        <i class='bx bx-file hero__cv-file-icon'></i><span>Download CV</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
         
         <!-- About -->
-        <section class="about" id="about">
+        <a id="about"></a>
+        <section class="about">
             <div class="about__container">
                 <!-- About - Section Titular -->
                 <div class="about__titular">
@@ -171,6 +173,7 @@
         </section>
 
         <!-- Portfolio -->
+        <a id="portfolio"></a>
         <section class="portfolio">
             <div class="portfolio__container">
                 <div class="portfolio__title">Portafolio</div>
@@ -187,6 +190,7 @@
         </section>
 
         <!-- Contact -->
+        <a id="contact"></a>
         <section class="contact">
             <div class="contact__container">
                 <div class="contact__title">Contacto</div>
@@ -208,7 +212,9 @@
     <!-- Section - Footer -->
     <footer class="footer">
         <div class="footer__container">
-            Derechos reservados
+            <p class="footer__text">
+                <span class="footer__text-message">Hecho con </span><i class='bx bxs-heart footer__logo-icon'></i><span class="footer__text-message"> en Academlo</span>
+            </p>
         </div>
     </footer>
 </body>

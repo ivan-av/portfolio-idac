@@ -1,3 +1,8 @@
+:root {
+    --padding-sides: 0 15px;
+    --tester-border: solid 1px;
+}
+
 html {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -50,7 +55,7 @@ body{
     text-decoration: none;
     padding: 8px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar__nav-menu a:hover{
@@ -84,8 +89,11 @@ body{
 .hero {
     height: auto;
     min-width: 300px;
-    padding: 0 15px;
-    /* border: solid 1px red; */
+
+    padding: var(--padding-sides);
+
+
+    border: red var(--tester-border);
 }
 
 .hero__container{
@@ -93,14 +101,18 @@ body{
     flex-direction: column;
     align-items: center;
     height: auto;
-    /* border: solid 1px blue; */
+
+
+    border: blue var(--tester-border);
 }
 
 .hero__title{
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* border: solid 2px green; */
+
+
+    border: green var(--tester-border);
 }
 
 .hero__main-name{
@@ -130,7 +142,9 @@ body{
     align-content: center;
     align-items: flex-start;
     gap: 18px;
-    /* border: orange solid 3px; */
+
+
+    border: orange var(--tester-border);
 }
 
 .hero__image{
@@ -198,6 +212,11 @@ body{
 
 .hero__cv {
     margin-top: 30px;
+    border: brown var(--tester-border)
+}
+
+.hero__cv-link {
+    text-decoration: none;
 }
 
 .hero__cv-btn {
@@ -228,19 +247,24 @@ body{
     padding-bottom: 40px;
     margin: 40px 0;
     background-color: #fbda67;
+
+    padding: var(--padding-sides);
+
+    border: red var(--tester-border);
 }
 
 .about__container{
-    padding: 0 15px;
     /* border: green solid 3px; */
     
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    border: blue var(--tester-border);
 }
 
 .about__titular {
-    /* border: brown solid 1px; */
+    border: salmon var(--tester-border);
 }
 
 .about__title {
@@ -255,10 +279,11 @@ body{
 }
 
 .about__experience {
-    /* border: solid 1px blue; */
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    border: green var(--tester-border);
 }
 
 .about__subtitle-experience {
@@ -309,27 +334,43 @@ body{
 }
 
 .about__skills {
-    /* border: solid 2px purple; */
+    
+
+    border: magenta var(--tester-border);
 }
 
 .portfolio{
     padding-top: 6px;
     padding-bottom: 10px;
     margin: 20px 0;
+
+    padding: var(--padding-sides);
+
+
+    border: red var(--tester-border);
 }
 
 .portfolio__container{
-    padding: 0 15px;
+    
+
+    border: blue var(--tester-border);
 }
 
 .contact{
     padding-top: 6px;
     padding-bottom: 10px;
     margin: 20px 0;
+
+    padding: var(--padding-sides);
+
+
+    border: red var(--tester-border);
 }
 
 .contact__container{
-    padding: 0 15px;
+    
+
+    border: blue var(--tester-border);
 }
 
 
@@ -340,13 +381,9 @@ body{
 
 
 .footer {
-    border: #004c8c 1px solid;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    text-align: center;
+    color: #7a6aca;
+
+    border: red var(--tester-border);
 }
-
-/* .footer__container { */
-
-/* } */
