@@ -436,7 +436,11 @@ body{
     min-width: var(--min-width);
     max-width: var(--max-width);
     border: blue var(--tester-border);
-}
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    }
 
 .portfolio__title{
     padding-bottom: 20px;
@@ -447,6 +451,7 @@ body{
 .portfolio__projects-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 
     
@@ -555,6 +560,7 @@ body{
 .contact__data {
     font-size: 12px;
     color: #787878;
+    text-decoration: none;
 }
 
 .footer {
