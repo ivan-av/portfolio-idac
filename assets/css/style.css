@@ -452,7 +452,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 
     
     border: green var(--tester-border);
@@ -560,7 +560,6 @@ body{
 .contact__data {
     font-size: 12px;
     color: #787878;
-    text-decoration: none;
 }
 
 .footer {
