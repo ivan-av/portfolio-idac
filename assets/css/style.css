@@ -2,8 +2,10 @@
     --padding-sides: 0 15px;
     --min-width: 300px;
     --max-width: 70vh;
+
     /* --tester-border: solid 1px; */
 }
+
 
 html {
     font-size: 16px;
@@ -20,7 +22,9 @@ html {
 
 body{
     margin: 0;
+    padding: 0;
 }
+
 
 .navbar{
     background: #8e7bef;
@@ -45,10 +49,6 @@ body{
     background-color: #7a6aca;
     padding: 20px 0;
 
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-
     display: flex;
     flex-direction: column;
 }
@@ -70,23 +70,61 @@ body{
     color: white;
 }
 
+.navbar-checkbox{
+    display: none;
+    }
+
+@media screen and (max-width: 767px) {
+    .navbar__nav-menu {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+    }
+
+    .navbar-checkbox:checked ~ .navbar__nav-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .navbar-btnCheckbox{
+        cursor: pointer;
+        margin-right: 20px;
+    }
+}
+
 /* .navbar i:hover {
     color: #ffe602;
     transition: 0.3s;
 } */
 
-.navbar-checkbox{
+@media screen and (min-width: 768px) {
+    .navbar{
+        top:0;
+        height: 40px;
+    }
+
+    .navbar__nav-menu{
+        top: 0px;
+        background-color: #8e7bef;
+        padding: 0px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 50px;
+
+        transition: 0.3s
+    }
+
+    .navbar__nav-menu a {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 16px;
+    }
+
+    .navbar i {
     display: none;
-}
-
-.navbar-checkbox:checked ~ .navbar__nav-menu {
-    opacity: 1;
-    visibility: visible;
-}
-
-.navbar-btnCheckbox{
-    cursor: pointer;
-    margin-right: 20px;
+    }
 }
 
 .hero {
@@ -499,7 +537,8 @@ body{
     min-width: var(--min-width);
     padding-top: 6px;
     padding-bottom: 10px;
-    margin: 20px 0;
+    margin-top: 40px; 
+    margin-bottom: 20px;
 
     padding: var(--padding-sides);
 
