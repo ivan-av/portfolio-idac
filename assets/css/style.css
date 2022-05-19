@@ -1,8 +1,8 @@
 :root {
     --padding-sides: 0 15px;
-    /* --tester-border: solid 1px; */
     --min-width: 300px;
     --max-width: 70vh;
+    /* --tester-border: solid 1px; */
 }
 
 html {
@@ -552,6 +552,11 @@ body{
     color: #8e7bef;
 }
 
+.contact__icon:hover {
+    color: #ffaf02;
+    transition: .2s;
+}
+
 .contact__subtitle {
     font-size: 15px;
     font-weight: 700;
@@ -570,5 +575,5 @@ body{
     color: #7a6aca;
     /* background-color: #fff6d6; */
 
-    border: red var(--tester-border);
+    border-top: rgb(231, 231, 231) solid 2px;
 }
