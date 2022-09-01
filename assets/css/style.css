@@ -590,7 +590,7 @@ body{
     }
     
     .about__subtitle-skills {
-        sfont-size: 20px;
+        font-size: 20px;
     }
     
     .skills__grid-container {
